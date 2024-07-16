@@ -1,4 +1,11 @@
 var firebaseConfig = {
+    apiKey: "AIzaSyB0GLtqotVPDaEBIHbdr9al2gacan4KWUo",
+    authDomain: "learn--a-thing.firebaseapp.com",
+    projectId: "learn--a-thing",
+    storageBucket: "learn--a-thing.appspot.com",
+    messagingSenderId: "380062594384",
+    appId: "1:380062594384:web:42c092f386e67cdfce6855",
+    measurementId: "G-XQ1BEK7SG8"};
 
 firebase.initializeApp(firebaseConfig);
 

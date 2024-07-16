@@ -1,0 +1,120 @@
+body {
+    font-family: 'Jost', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    transition: background 0.3s;
+}
+
+body.dark {
+    background: linear-gradient(to right, #2c3e50, #4ca1af);
+}
+
+.onboarding-container {
+    background: white;
+    padding: 3rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+    transition: background 0.3s, color 0.3s;
+}
+
+body.dark .onboarding-container {
+    background: #333;
+    color: #fff;
+}
+
+h1 {
+    font-family: 'Gaegu', cursive;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.onboarding-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.step {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.step.active {
+    display: flex;
+}
+
+label {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+input, select {
+    font-family: 'Jost', sans-serif;
+    font-size: 1.2rem;
+    padding: 0.75rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 400px;
+}
+
+body.dark input, body.dark select {
+    background: #555;
+    color: #fff;
+    border: none;
+}
+
+button {
+    background: #0072ff;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 1rem;
+}
+
+body.dark button {
+    background: #4ca1af;
+}
+
+button:hover {
+    background: #005bb5;
+}
+
+body.dark button:hover {
+    background: #3b8d99;
+}
+
+#error-message {
+    color: red;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.toggle-theme {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+body.dark .toggle-theme {
+    background: #333;
+}
