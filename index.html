@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Learn-a-thing</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script>
+</head>
+<body>
+    <div class="login-container" data-aos="fade-up">
+        <h1>Login to Learn-a-thing</h1>
+        <div class="toggle-theme">
+            <span id="theme-icon">🌞</span>
+        </div>
+        <div class="social-login-container">
+            <button id="google-login" class="social-login">
+                <img src="https://www.svgrepo.com/show/332087/google-circle.svg" alt="Google Logo" class="logo-icon">
+            </button>
+            <button id="apple-login" class="social-login">
+                <img src="https://www.svgrepo.com/show/494331/apple-round.svg" alt="Apple Logo" class="logo-icon">
+            </button>
+        </div>
+        <form id="passwordless-login-form" class="login-form">
+            <input type="email" id="email" placeholder="Email" required>
+            <button type="submit">Send Magic Link</button>
+        </form>
+        <div id="login-message"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+body {
+    font-family: 'Jost', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    transition: background 0.3s;
+}
+
+body.dark {
+    background: linear-gradient(to right, #2c3e50, #4ca1af);
+}
+
+.login-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    transition: background 0.3s, color 0.3s;
+}
+
+body.dark .login-container {
+    background: #333;
+    color: #fff;
+}
+
+h1 {
+    font-family: 'Gaegu', cursive;
+    margin-bottom: 1.5rem;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form input {
+    font-size: 1rem;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+body.dark .login-form input {
+    background: #555;
+    color: #fff;
+    border: none;
+}
+
+.login-form button {
+    background: #0072ff;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+body.dark .login-form button {
+    background: #4ca1af;
+}
+
+.login-form button:hover {
+    background: #005bb5;
+}
+
+body.dark .login-form button:hover {
+    background: #3b8d99;
+}
+
+.social-login-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.social-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background 0.3s;
+}
+
+.social-login img {
+    width: 40px;
+    height: 40px;
+}
+
+.social-login:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+#error-message {
+    color: red;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+}
+
+.signup-link p {
+    margin-top: 1rem;
+}
+
+.signup-link a {
+    color: #0072ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+body.dark .signup-link a {
+    color: #4ca1af;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+.toggle-theme {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+body.dark .toggle-theme {
+    background: #333;
+}
